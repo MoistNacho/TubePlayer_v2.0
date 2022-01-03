@@ -1,0 +1,74 @@
+@font-face {
+	font-family: "TmoneyRoundWindRegular";
+	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindRegular.woff")
+		format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+
+:root {
+	/* font Size */
+	--font-large: 24px;
+	--font-medium: 20px;
+	--font-small: 10px;
+	--font-button: 30px;
+
+	/* margin&padding size */
+	--space-large: 50px;
+	--space-small: 10px;
+
+	/* border */
+	--border-base: 1px solid rgb(104, 104, 104);
+	--border-header: 1px solid var(--header-light-color);
+
+	/* Item Min/Max Size */
+	--item-max-size: 300px;
+	--item-min-size: 225px;
+
+	--media-height: 360px;
+
+	/* color */
+	--font-color: #e7e7e7;
+	--font-sub-color: #cccccc;
+	--background-color: #282828;
+	--header-color: #111;
+	--header-light-color: #333;
+	--header-logo-color: #555;
+	--header-search-color: #1a1a1a;
+}
+
+* {
+	font-family: "TmoneyRoundWindRegular";
+	box-sizing: border-box;
+}
+
+body {
+	font-size: var(--font-large);
+	color: var(--font-color);
+	margin: 0;
+	background-color: var(--background-color);
+}
+
+body::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+body::-webkit-scrollbar-track {
+	border: 1px solid rgb(104, 104, 104);
+	background-color: rgba(0, 0, 0, 0.4);
+}
+body::-webkit-scrollbar-thumb {
+	background-color: rgb(104, 104, 104);
+}
+
+ul {
+	list-style: none;
+}
+
+button {
+	cursor: pointer;
+	outline: none;
+	border: none;
+	background-color: transparent;
+}

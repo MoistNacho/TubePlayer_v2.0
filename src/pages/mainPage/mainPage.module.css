@@ -1,0 +1,11 @@
+@import "../../app.module.css";
+
+.mainWrap {
+	width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+	.mainWrap {
+		flex-direction: column;
+	}
+}

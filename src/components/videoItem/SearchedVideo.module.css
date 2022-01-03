@@ -1,0 +1,88 @@
+@import "../../app.module.css";
+
+.video {
+	display: flex;
+	column-gap: calc(var(--space-small) * 2);
+	width: 100%;
+	padding: 8px 0;
+	border-bottom: 1px solid #a5a5a5;
+}
+
+.imgWrap {
+	flex: 0 0 40%;
+	max-width: 240px;
+	cursor: pointer;
+}
+
+.imgWrap img {
+	width: 100%;
+	height: 100%;
+}
+
+.imgWrap:hover {
+	transform: scale(1.02);
+}
+
+.infoWrap {
+	position: relative;
+	cursor: pointer;
+	flex: 1 1 60%;
+	display: flex;
+	flex-direction: column;
+}
+
+.infoWrap .favorWrap {
+	position: absolute;
+	bottom: 3px;
+	width: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px;
+	background-color: #29292995;
+	border: 1px solid var(--font-color);
+	border-radius: 2px;
+}
+
+.title {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	font-family: "Noto Sans KR";
+	font-size: calc(var(--font-small) * 1.3);
+	margin-top: 0;
+	margin-bottom: 4px;
+}
+
+.nameDate {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	overflow: hidden;
+	font-family: "Noto Sans KR";
+	font-weight: 300;
+	font-size: var(--font-small);
+	color: var(--font-sub-color);
+	margin-bottom: var(--space-small);
+}
+
+.desc {
+	font-family: "Noto Sans KR";
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	overflow: hidden;
+	font-size: var(--font-small);
+	margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+	.video {
+		column-gap: var(--space-small);
+	}
+	.title {
+		font-family: "Noto Sans KR";
+		font-size: calc(var(--font-small) * 1.1);
+	}
+}

@@ -1,0 +1,26 @@
+@import "../../app.module.css";
+
+.popWrap {
+	position: fixed;
+	z-index: 5000;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 240px;
+	height: 34px;
+	border-radius: 20px;
+	background-color: var(--header-color);
+	font-family: "Noto Sans KR";
+	font-size: 12px;
+	color: var(--font-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity 0.2s ease-in;
+}
+
+.popWrap.on {
+	opacity: 1;
+}

@@ -1,0 +1,16 @@
+@import "../../../app.module.css";
+
+.favorBtn {
+	height: 14px;
+	padding: 0;
+	transition: transform 150ms ease-in;
+}
+
+.favorBtn:hover {
+	transform: scale(1.2);
+}
+
+.favorBtn img {
+	width: 14px;
+	height: 14px;
+}

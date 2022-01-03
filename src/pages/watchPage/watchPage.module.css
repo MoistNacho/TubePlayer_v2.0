@@ -1,0 +1,19 @@
+.mainWrap {
+	position: relative;
+	max-width: 1400px;
+	margin: calc(var(--space-small) * 2) auto;
+	padding: 0 calc(var(--space-small) * 2);
+	display: flex;
+}
+
+@media screen and (max-width: 1050px) {
+	.mainWrap {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.mainWrap {
+		padding: 0 var(--space-small);
+	}
+}

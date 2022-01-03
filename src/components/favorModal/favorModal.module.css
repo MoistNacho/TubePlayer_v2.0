@@ -1,0 +1,196 @@
+@import "../../app.module.css";
+
+.modalWrap {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #00000050;
+	transition: opacity 0.3s ease-in;
+}
+
+.modalBox {
+	width: 600px;
+
+	z-index: 1000;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--header-color);
+	border-radius: 10px;
+	transition: all 0.3s ease-in;
+}
+
+.modalBox .header {
+	display: flex;
+	justify-content: flex-end;
+	padding: calc(var(--space-small) * 1.5);
+}
+
+.header button {
+	padding: 0;
+}
+
+.header button img {
+	width: 12px;
+	height: 12px;
+}
+
+.body {
+	position: relative;
+	width: 100%;
+	height: 500px;
+	padding: calc(var(--space-small) * 1.5);
+}
+
+.body .loadingWrap {
+	position: absolute;
+	top: 40%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.videoList {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	overflow-y: scroll;
+}
+
+.videoList::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+.videoList::-webkit-scrollbar-track {
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+}
+.videoList::-webkit-scrollbar-thumb {
+	background-color: rgb(104, 104, 104);
+	border-radius: 10px;
+}
+
+.videoList li {
+	display: flex;
+	column-gap: var(--space-small);
+	padding-bottom: 4px;
+	border-bottom: 2px solid #272727;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+
+.videoList .imgWrap {
+	cursor: pointer;
+	flex: 1 1 20%;
+	display: flex;
+}
+
+.imgWrap img {
+	width: 160px;
+	object-fit: cover;
+	font-size: 10px;
+}
+
+.infoWrap {
+	cursor: pointer;
+	flex: 1 1 70%;
+	display: flex;
+	flex-direction: column;
+}
+
+.infoWrap h6 {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	font-family: "Noto Sans KR";
+	font-size: 12px;
+	line-height: 16px;
+	margin: 0;
+}
+
+.infoWrap span {
+	font-family: "Noto Sans KR";
+	color: var(--font-sub-color);
+	font-size: 10px;
+	line-height: 14px;
+	margin: 0;
+}
+
+.deleteBtn {
+	height: 100%;
+	padding: 0;
+	margin-right: var(--space-small);
+	display: flex;
+	align-items: center;
+}
+
+.deleteBtn img {
+	width: 16px;
+	height: 16px;
+}
+
+.none .title {
+	font-family: "Noto Sans KR";
+	color: var(--font-sub-color);
+	font-size: 16px;
+	font-weight: 300;
+	text-align: center;
+	margin: 50px 0 15px;
+}
+
+.none .sub {
+	font-family: "Noto Sans KR";
+	color: #9e9e9e;
+	font-size: 12px;
+	font-weight: 300;
+	text-align: center;
+	margin: 0;
+}
+
+.disable {
+	pointer-events: none;
+}
+
+.disable .modalBox {
+	transform: scale(0.3);
+	opacity: 0;
+}
+
+.disable .background {
+	opacity: 0;
+}
+
+@media screen and (max-width: 600px) {
+	.modalWrap {
+		padding: 10px;
+	}
+	.modalBox {
+		width: 100%;
+	}
+
+	.videoList li .imgWrap img {
+		width: 120px;
+	}
+
+	.videoList li {
+		column-gap: 5px;
+	}
+
+	.videoList .deleteBtn {
+		margin-right: 0;
+	}
+}
