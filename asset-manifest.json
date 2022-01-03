@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/TubePlayer_v2.0/static/css/main.c8b6195b.chunk.css",
+    "main.js": "/TubePlayer_v2.0/static/js/main.38866e68.chunk.js",
+    "main.js.map": "/TubePlayer_v2.0/static/js/main.38866e68.chunk.js.map",
+    "runtime-main.js": "/TubePlayer_v2.0/static/js/runtime-main.e6598094.js",
+    "runtime-main.js.map": "/TubePlayer_v2.0/static/js/runtime-main.e6598094.js.map",
+    "static/js/2.6a81e463.chunk.js": "/TubePlayer_v2.0/static/js/2.6a81e463.chunk.js",
+    "static/js/2.6a81e463.chunk.js.map": "/TubePlayer_v2.0/static/js/2.6a81e463.chunk.js.map",
+    "index.html": "/TubePlayer_v2.0/index.html",
+    "static/css/main.c8b6195b.chunk.css.map": "/TubePlayer_v2.0/static/css/main.c8b6195b.chunk.css.map",
+    "static/js/2.6a81e463.chunk.js.LICENSE.txt": "/TubePlayer_v2.0/static/js/2.6a81e463.chunk.js.LICENSE.txt",
+    "static/media/close.73d3d853.svg": "/TubePlayer_v2.0/static/media/close.73d3d853.svg",
+    "static/media/favorList.2e2c2db3.svg": "/TubePlayer_v2.0/static/media/favorList.2e2c2db3.svg",
+    "static/media/favorite-line.fa906c96.svg": "/TubePlayer_v2.0/static/media/favorite-line.fa906c96.svg",
+    "static/media/favorite.2d83517d.svg": "/TubePlayer_v2.0/static/media/favorite.2d83517d.svg",
+    "static/media/trash.fea36306.svg": "/TubePlayer_v2.0/static/media/trash.fea36306.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e6598094.js",
+    "static/js/2.6a81e463.chunk.js",
+    "static/css/main.c8b6195b.chunk.css",
+    "static/js/main.38866e68.chunk.js"
+  ]
+}
