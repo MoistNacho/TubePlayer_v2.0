@@ -6,7 +6,7 @@ import "@fortawesome/fontawesome-free/js/all.js";
 import { StoreProvider } from "./context/index";
 
 ReactDOM.render(
-	<BrowserRouter>
+	<BrowserRouter basename={process.env.REACT_APP_PUBLIC_URL}>
 		<StoreProvider>
 			<App />
 		</StoreProvider>
