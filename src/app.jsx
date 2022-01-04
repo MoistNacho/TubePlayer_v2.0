@@ -24,10 +24,6 @@ const App = () => {
 		setModal(false);
 	}, [location]);
 
-	useEffect(() => {
-		console.log(state.activate);
-	}, [state]);
-
 	const openModal = () => {
 		setModal(true);
 	};
