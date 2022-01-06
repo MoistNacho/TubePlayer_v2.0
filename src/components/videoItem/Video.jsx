@@ -26,6 +26,7 @@ const Video = ({ video, modal }) => {
 		<li
 			className={`${styles.video} ${preview ? styles.preview : ""}`}
 			onMouseEnter={() => {
+				if (window.innerWidth < 650) return;
 				setMouseDelay(
 					setTimeout(() => {
 						setPreview(true);
@@ -33,6 +34,7 @@ const Video = ({ video, modal }) => {
 				);
 			}}
 			onMouseLeave={() => {
+				if (window.innerWidth < 650) return;
 				clearTimeout(mouseDelay);
 				setPreview(false);
 			}}
