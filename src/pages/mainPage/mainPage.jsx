@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { useState } from "react/cjs/react.development";
+import React, { useEffect, useState } from "react";
 import VideoList from "../../components/videoList/VideoList";
 import styles from "./mainPage.module.css";
 import axios from "axios";
