@@ -72,3 +72,8 @@ button {
 	border: none;
 	background-color: transparent;
 }
+
+input {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+}
