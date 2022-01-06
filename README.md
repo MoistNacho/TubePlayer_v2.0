@@ -8,7 +8,7 @@
 4. 동영상 찜하기 기능을 추가하여 리스트 아이템의 하트 모양을 클릭시 로컬스토리지에 해당 비디오를 저장합니다. 상단 헤더의 saved 버튼으로 찜목록을 확인 가능합니다.
 5. 단순했던 영상 상세보기 페이지를 유튜브와 비슷한 디자인으로 전반적으로 수정하였습니다.
 
-Demo : https://moistnacho.github.io/TubePlayer_v2.0/
+Demo : https://moist-nacho-tubeplayer.netlify.app
 
 ## Tools
 
