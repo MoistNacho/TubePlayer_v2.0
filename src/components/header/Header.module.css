@@ -41,8 +41,8 @@
 }
 
 .logoIcon {
+	width: 22px !important;
 	color: var(--header-logo-color);
-	padding-right: 8px;
 	font-size: var(--font-button);
 }
 
@@ -103,7 +103,11 @@
 	.logoName {
 		display: none;
 	}
+
 	.searchBar {
-		width: 80%;
+		width: 100%;
+	}
+	.searchBar .input {
+		width: 150px;
 	}
 }
